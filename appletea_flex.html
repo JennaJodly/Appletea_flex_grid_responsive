@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="To create a amazing website...">
+    <meta name="keywords" content="website | build | support">
+    <meta name="author" content="Jenna Jodly">
+    <title>appletea</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        header {
+            background: url(images/manhattan-bridge-new-york-city.avif);
+            background-size: cover;
+        }
+
+        .header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 80%;
+        }
+
+        .row1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row1>div {
+            width: 50%;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 100;
+        }
+
+        .imgcontent {
+            display: flex;
+            align-items: center;
+            height: 500px;
+            justify-content: center;
+        }
+
+        .imgcontent h2 {
+            font-size: 45px;
+            margin: 0;
+        }
+
+        .imgcontent button,.row6 input[type=button] {
+            background-color: rgb(249, 189, 11);
+            border: 0;
+            padding: 6px 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .content h2,
+        .img4 h3,p,
+        .row6 h2 {
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+
+        .content p,
+        .row4 p,
+        .row5 p,
+        .row6 p {
+            padding: 0% 15%;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .row2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom: 30px;
+        }
+
+        .row2>div:first-child {
+            width: 30%;
+            line-height: 2;
+        }
+
+        .row2>div:nth-child(2) {
+            width: 65%;
+        }
+
+        .row2 h3,
+        .row4 h2,
+        .row5 h2 ,
+        .lrow h2{
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+
+        .row2 input[type=range] {
+            accent-color: rgb(255, 172, 5);
+            width: 100%;
+            -webkit-appearance: none;
+            height: 15px;
+            background: rgb(247, 189, 14);
+        }
+
+        article {
+            background-color: rgb(255, 243, 12);
+            /* padding-bottom: 50px; */
+        }
+
+        .row3,
+        .row4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+
+        .cols,
+        .img4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom:50px ;
+        }
+
+        .cols input[type=text] {
+            width: 24%;
+            padding: 6px 30px;
+            background-color: rgb(243, 215, 104);
+            border: 0;
+        }
+
+        .cols input[type=submit] {
+            padding: 6px 30px;
+            background-color: rgb(44, 44, 43);
+            border: 0;
+            color: white;
+        }
+
+        main {
+            background-color: rgb(75, 74, 74);
+            color: white;
+        }
+
+        .img4>div {
+            width: 20%;
+        }
+
+        .img4>div img {
+            border-radius: 50%;
+            border: solid rgb(255, 242, 0) 5px;
+        }
+
+        .img4 input[type=button] {
+            background-color: orange;
+            padding: 5px 20px;
+            color: rgb(0, 0, 0);
+            border: 0;
+            border-radius: 2px;
+        }
+
+        .content1,
+        .row5 {
+            text-align: center;
+        }
+
+        .row5 input[type=button],
+        .row5 input[type=text] {
+            border-style: solid;
+            border-color: rgb(239, 209, 40);
+            border-radius: 2px;
+            padding: 5px 20px;
+        }
+
+        .pic {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            justify-content: space-between;
+            row-gap: 50px;
+            margin: 30px 0px;
+        }
+
+        .common {
+            height: 339px;
+            display: flex;
+            align-items: end;
+        }
+
+        .pic h2,p {
+            /* margin: 0; */
+            padding: 0;
+            text-align: left;
+        }
+
+        .pic>div>div {
+            background-color: rgb(0, 0, 0, 0.6);
+            color: white;
+            padding: 0px 10px;
+            line-height: 1.5;
+        }
+        
+        footer{
+            background: url(images/manhattan-bridge-new-york-city.avif);
+        }
+        .row6{
+            color:white;
+            text-align: center;
+        }
+        .row6 input[type=text]{
+            width:50%;
+            height: 35px;
+            background-color: rgb(255, 255, 255);   
+            border:0;
+            margin: 10px 0px;
+        }
+        .row6 textarea{
+            background-color: rgb(255, 255, 255);
+            border:0;
+            margin: 10px 0px;
+        }
+        .row6 li{
+            display: inline-block;
+            padding: 0px 40px;
+        }
+        @media(max-width:576px){
+            .row1>div,.row2>div:first-child,.pic h2, p,.row2>div:nth-child(2),.img4>div{
+                width:100%;
+                text-align: center;
+            }
+            .menu{
+                flex-direction: column;
+            }
+            .cols input[type=text] {
+                margin:10px;
+                width:100%;
+            }
+            .content1{
+                padding-bottom: 20px;
+            }
+            .pic{
+                grid-template-columns:100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header box">
+            <div class="container">
+                <div class="row1">
+                    <div>
+                        <h2>LOGO DESIGN</h2>
+                    </div>
+                    <div class="menu">
+                        <a href="">About</a>
+                        <a href="">Sevices</a>
+                        <a href="">Folio</a>
+                        <a href="">Blog</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imgcontent">
+            <div class="center">
+                <h2><i>Nice to meet you!</i></h2>
+                <p>We just don't build websites, we build brands</p>
+                <button>GET IN TOUCH</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="content">
+            <h2> ABOUT US</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae et accusantium facere maiores, quis
+                optio.
+                Vitae molestias quaerat eveniet veniam excepturi, delectus, veritatis sunt dolorem facilis voluptatibus
+                magnam est
+                recusandae.</p>
+        </div>
+        <div class="box">
+            <div class="container">
+                <div class="row2">
+                    <div>
+                        <h2>WHAT CAN WE DO</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos a nihil assumenda minima cumque
+                            fuga modi,
+                            nemo aliquam quam quod quae tempore provident dicta totam iste pariatur. Voluptate, omnis
+                            possimus. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                    <div>
+                        <h3>DESIGN</h3>
+                        <input type="range" value="1" name="brand2" aria-label="search">
+                        <h3>CODING</h3>
+                        <input type="range" value="1" name="brand2" aria-label="search">
+                        <h3>MARKETTING</h3>
+                        <input type="range" value="1" name="brand2" aria-label="search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article class="box">
+        <div class="container">
+            <div class="row3">
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+            </div>
+            <div class="cols">
+                <input type="text" name="name" placeholder="FIRST NAME" aria-label="search">
+                <input type="text" name="lname" placeholder="LAST NAME" aria-label="search">
+                <input type="text" name="email" placeholder="E-MAIL ADDRESS" aria-label="search">
+                <input type="submit" name="button" value="SUBSCRIBE" aria-label="search">
+            </div>
+        </div>
+    </article>
+
+    <main>
+        <div class="box">
+            <div class="container">
+                <div class="row4">
+                    <h2>OUR TEAM</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus voluptate temporibus
+                        dolorum, perferendis tempore, error, dolores non rerum adipisci atque quae eius earum molestias
+                        est quisquam illo labore tempora.
+                    </p>
+                </div>
+                <div class="img4">
+                    <div class="content1">
+                        <img src="images/img1.avif" alt="">
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, omnis molestias inventore
+                            maxime temporary.</p>
+                        <input type="button" name="button" value="&#x2709" aria-label="search">
+                    </div>
+                    <div class="content1">
+                        <img src="images/img2.avif" alt="">
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, omnis molestias inventore
+                            maxime temporary.</p>
+                        <input type="button" name="button" value="&#x2709" aria-label="search">
+                    </div>
+                    <div class="content1">
+                        <img src="images/img3.avif" alt="">
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, omnis molestias inventore
+                            maxime temporary.</p>
+                        <input type="button" name="button" value="&#x2709" aria-label="search">
+                    </div>
+                    <div class="content1">
+                        <img src="images/img4.avif" alt="">
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, omnis molestias inventore
+                            maxime temporary.</p>
+                        <input type="button" name="button" value="&#x2709" aria-label="search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="box">
+        <div class="container">
+            <div class="row5">
+                <h2>PORTFOLIO</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis temporibus consequatur eveniet
+                    doloribus sed rerum necessitatibus voluptatum dolorem doloremque facilis iste ullam.</p>
+                <div>
+                    <input type="button" name="button" value="All">
+                    <input type="text" name="text1" placeholder="Design" aria-label="search">
+                    <input type="text" name="text2" placeholder="Identity" aria-label="search">
+                    <input type="text" name="text3" placeholder="Photography" aria-label="search">
+                    <input type="text" name="text4" placeholder="Illustration" aria-label="search">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="container">
+            <div class="pic">
+                <div style="background: url(images/r1_c1.avif);" class="common">
+                    <div>
+                        <h2>TITLE</h2>
+                        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</P>
+                    </div>
+                </div>
+                <div style="background: url(images/r1_c2.avif);" class="common">
+                    <div>
+                        <h2>TITLE</h2>
+                        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</P>
+                    </div>
+                </div>
+                <div style="background: url(images/r1_c3.avif);" class="common">
+                    <div>
+                        <h2>TITLE</h2>
+                        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</P>
+                    </div>
+                </div>
+                <div style="background: url(images/r2_c1.avif);" class="common">
+                    <div>
+                        <h2>TITLE</h2>
+                        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</P>
+                    </div>
+                </div>
+                <div style="background: url(images/r2_c2.avif);" class="common">
+                </div>
+                <div style="background: url(images/r2_c3.avif);" class="common">
+                    <div>
+                        <h2>TITLE</h2>
+                        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</P>
+                    </div>
+                </div>
+                <div style="background: url(images/r3_c1.avif);" class="common">
+                    <div>
+                        <h2>TITLE</h2>
+                        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</P>
+                    </div>
+                </div>
+                <div style="background: url(images/r3_c2.avif);" class="common">
+                    <div>
+                        <h2>TITLE</h2>
+                        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</P>
+                    </div>
+                </div>
+                <div style="background: url(images/r2_c3.avif);" class="common">
+                    <div>
+                        <h2>TITLE</h2>
+                        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="box">
+        <div class="container">
+            <div class="row6">
+                <h2>CONTACT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquam quos iure odio! Non voluptatem libero,
+                     qui, veritatis perferendis at perspiciatis nostrum beatae soluta, esse incidunt fugiat molestias ut corrupti.</p>
+                <input type="text" name="button" placeholder="Enter your name" aria-label="search">
+                <input type="text" name="text1" placeholder="Enter your addtress" aria-label="search">
+                <input type="text" name="text2" placeholder="Enter your city" aria-label="search">
+                <input type="text" name="text3" placeholder="Email your email address" aria-label="search"> 
+                <!-- <textarea name="textmsg" rows="10" cols="" placeholder="Enter your email message"></textarea><br>  -->
+                <input type="text" name="text3" placeholder="Email your email address" aria-label="search"> <br>
+                <input type="button" name="button" value="Submit" aria-label="search">  
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Portfolio</li>
+                    <li>contact</li>
+                </ul>
+                <p>copyright Logodesign 2020.All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
